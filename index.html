@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechNova Solutions | Enterprise Software, Cloud &amp; AI Engineering</title>
+<meta name="description" content="TechNova Solutions is a global enterprise IT partner delivering custom software, cloud, AI &amp; automation, cyber security and data analytics for Fortune 500 companies across 35 countries.">
+<meta name="keywords" content="enterprise software development, cloud solutions, AI automation, cyber security, Power BI, SharePoint, TechNova Solutions">
+<meta property="og:title" content="TechNova Solutions | Enterprise Software, Cloud & AI Engineering">
+<meta property="og:description" content="Custom software, cloud, AI and cyber security for enterprise leaders in 35 countries.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-home">
+
+<!-- Loading Screen -->
+<div id="loading-screen" aria-hidden="true">
+  <svg class="loader-mark" viewBox="0 0 48 48" fill="none">
+    <polygon points="24,2 44,13 44,35 24,46 4,35 4,13" stroke="#F2B705" stroke-width="2.5"/>
+    <path d="M16 32V16l16 16V16" stroke="#F2B705" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+
+<div id="scroll-progress"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <polygon points="24,2 44,13 44,35 24,46 4,35 4,13" fill="url(#g1)"/>
+        <path d="M16 32V16l16 16V16" stroke="#14161A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs><linearGradient id="g1" x1="4" y1="2" x2="44" y2="46"><stop stop-color="#FFD65C"/><stop offset="1" stop-color="#F2B705"/></linearGradient></defs>
+      </svg>
+      <span class="word">TechNova</span>
+    </a>
+
+    <nav class="nav-main" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" data-search-open aria-label="Search website">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>
+      </button>
+      <a href="contact.html" class="btn btn-primary btn-sm">Request a Quote</a>
+      <button class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Search Overlay -->
+<div class="search-overlay" role="dialog" aria-label="Site search">
+  <div class="search-panel">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="text" placeholder="Search services, industries, blog, careers…" aria-label="Search">
+      <button class="search-close" aria-label="Close search">&times;</button>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<!-- ============ HERO SLIDER ============ -->
+<section class="hero-slider" aria-roledescription="carousel" aria-label="Featured highlights">
+
+  <div class="slide active" data-bg="1" data-title="01 · Enterprise Software">
+    <div class="slide-content">
+      <div class="eyebrow">Custom Engineering</div>
+      <h1>We engineer the systems Fortune 500 companies run on.</h1>
+      <p>From legacy modernization to cloud-native platforms, TechNova designs and ships enterprise software that scales with your business — not against it.</p>
+      <div class="cta-row">
+        <a href="services.html" class="btn btn-primary">Explore Services</a>
+        <a href="contact.html" class="btn btn-ghost-light">Talk to an Expert</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-bg="2" data-title="02 · Cloud &amp; Infrastructure">
+    <div class="slide-content">
+      <div class="eyebrow">Cloud &amp; DevOps</div>
+      <h1>Cloud infrastructure built for resilience at global scale.</h1>
+      <p>Azure, AWS and hybrid architectures engineered with zero-downtime deployment pipelines and 24/7 observability across 35 countries.</p>
+      <div class="cta-row">
+        <a href="services.html#cloud" class="btn btn-primary">Cloud Solutions</a>
+        <a href="portfolio.html" class="btn btn-ghost-light">View Case Studies</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-bg="3" data-title="03 · AI &amp; Automation">
+    <div class="slide-content">
+      <div class="eyebrow">Applied Intelligence</div>
+      <h1>AI that removes friction, not just adds a dashboard.</h1>
+      <p>We embed machine learning and intelligent automation directly into your operating workflows — measurable ROI, not a science project.</p>
+      <div class="cta-row">
+        <a href="services.html#ai-automation" class="btn btn-primary">AI &amp; Automation</a>
+        <a href="contact.html" class="btn btn-ghost-light">Book a Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-bg="4" data-title="04 · Cyber Security">
+    <div class="slide-content">
+      <div class="eyebrow">Security &amp; Compliance</div>
+      <h1>Enterprise-grade security, engineered in from day one.</h1>
+      <p>Zero-trust architecture, continuous threat monitoring and compliance frameworks that satisfy the world's most regulated industries.</p>
+      <div class="cta-row">
+        <a href="services.html#cyber-security" class="btn btn-primary">Cyber Security</a>
+        <a href="about.html" class="btn btn-ghost-light">Why TechNova</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-bg="5" data-title="05 · Global Delivery">
+    <div class="slide-content">
+      <div class="eyebrow">500+ Clients · 35 Countries</div>
+      <h1>A global delivery team trusted by industry leaders.</h1>
+      <p>500 specialists, 1000+ delivered projects and a decade of partnerships with the world's most demanding enterprises.</p>
+      <div class="cta-row">
+        <a href="careers.html" class="btn btn-primary">Join Our Team</a>
+        <a href="contact.html" class="btn btn-ghost-light">Get a Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-controls">
+    <div class="slider-meta">
+      <button class="js-playpause" aria-label="Pause slideshow" style="width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);background:rgba(255,255,255,.08);color:#fff;display:flex;align-items:center;justify-content:center;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+      </button>
+      <span class="slide-title">01 · Enterprise Software</span>
+      <div class="progress-dots"></div>
+    </div>
+    <div class="slider-btns">
+      <button class="js-prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="js-next" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats-strip">
+  <div class="container stats-grid">
+    <div class="stat"><div class="num" data-count="500" data-suffix="+">0</div><div class="lbl">Trusted Clients</div></div>
+    <div class="stat"><div class="num" data-count="10" data-suffix="+">0</div><div class="lbl">Years Experience</div></div>
+    <div class="stat"><div class="num" data-count="1000" data-suffix="+">0</div><div class="lbl">Projects Delivered</div></div>
+    <div class="stat"><div class="num" data-count="35" data-suffix="">0</div><div class="lbl">Countries Served</div></div>
+    <div class="stat"><div class="num" data-count="500" data-suffix="">0</div><div class="lbl">Employees Worldwide</div></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT PREVIEW (split) ============ -->
+<section class="section-pad">
+  <div class="container split">
+    <div class="split-media reveal-zoom">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop" alt="TechNova engineering team collaborating in a modern office" loading="lazy">
+      <div class="floating-card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <div><strong>ISO 27001</strong><span>Certified security practices</span></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Who We Are</div>
+      <h2>Engineering partners for enterprises who can't afford to stand still.</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem;">Founded in 2016, TechNova Solutions has grown from a five-person consultancy into a 500-strong global delivery team, helping enterprise leaders modernize, automate and secure the systems their business depends on.</p>
+      <div class="value-list">
+        <div class="value-item"><span class="num">01</span><div><h4>Outcome-driven delivery</h4><p>We measure success in business impact, not story points.</p></div></div>
+        <div class="value-item"><span class="num">02</span><div><h4>Senior engineering, always</h4><p>No offshore juniors learning on your budget.</p></div></div>
+        <div class="value-item"><span class="num">03</span><div><h4>Security by design</h4><p>Compliance and resilience built in from day one.</p></div></div>
+      </div>
+      <a href="about.html" class="btn btn-outline" style="margin-top:32px;">Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section-pad bg-surface">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">What We Do</div>
+      <h2>Enterprise services built for measurable outcomes</h2>
+      <p>Sixteen disciplines, one integrated delivery team — from first architecture sketch to 24/7 production support.</p>
+    </div>
+    <div class="services-grid stagger" id="services-preview">
+      <!-- Cards injected identically to services.html subset -->
+    </div>
+    <div style="text-align:center;margin-top:52px;">
+      <a href="services.html" class="btn btn-primary">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES (accordion rows) ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Industries</div>
+      <h2>Deep domain expertise, not generic solutions</h2>
+    </div>
+    <div class="industry-list">
+      <div class="industry-row"><span class="idx">01</span><h3>Healthcare</h3><span class="tags">EHR · Telehealth · HIPAA</span><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+      <div class="industry-row"><span class="idx">02</span><h3>Banking &amp; Finance</h3><span class="tags">Core Banking · Fraud AI</span><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+      <div class="industry-row"><span class="idx">03</span><h3>Manufacturing</h3><span class="tags">IIoT · Smart Factory</span><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+      <div class="industry-row"><span class="idx">04</span><h3>Retail &amp; eCommerce</h3><span class="tags">Omnichannel · POS</span><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+      <div class="industry-row"><span class="idx">05</span><h3>Government</h3><span class="tags">Citizen Services</span><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+      <div class="industry-row"><span class="idx">06</span><h3>Logistics</h3><span class="tags">Fleet · Route AI</span><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></span></div>
+    </div>
+    <div style="text-align:center;margin-top:44px;"><a href="industries.html" class="btn btn-outline">All 12 Industries</a></div>
+  </div>
+</section>
+
+<!-- ============ TECHNOLOGIES marquee ============ -->
+<section class="section-pad bg-surface">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Technology Stack</div>
+      <h2>Modern, battle-tested technologies</h2>
+    </div>
+  </div>
+  <div class="tech-marquee-wrap" style="margin-bottom:16px;">
+    <div class="tech-marquee">
+      <span class="tech-chip"><span class="dot"></span>Microsoft Azure</span>
+      <span class="tech-chip"><span class="dot"></span>Power Platform</span>
+      <span class="tech-chip"><span class="dot"></span>Power BI</span>
+      <span class="tech-chip"><span class="dot"></span>SharePoint</span>
+      <span class="tech-chip"><span class="dot"></span>.NET</span>
+      <span class="tech-chip"><span class="dot"></span>React</span>
+      <span class="tech-chip"><span class="dot"></span>Node.js</span>
+      <span class="tech-chip"><span class="dot"></span>AWS</span>
+      <span class="tech-chip"><span class="dot"></span>Docker</span>
+      <span class="tech-chip"><span class="dot"></span>Kubernetes</span>
+      <!-- duplicate for seamless loop -->
+      <span class="tech-chip"><span class="dot"></span>Microsoft Azure</span>
+      <span class="tech-chip"><span class="dot"></span>Power Platform</span>
+      <span class="tech-chip"><span class="dot"></span>Power BI</span>
+      <span class="tech-chip"><span class="dot"></span>SharePoint</span>
+      <span class="tech-chip"><span class="dot"></span>.NET</span>
+      <span class="tech-chip"><span class="dot"></span>React</span>
+      <span class="tech-chip"><span class="dot"></span>Node.js</span>
+      <span class="tech-chip"><span class="dot"></span>AWS</span>
+      <span class="tech-chip"><span class="dot"></span>Docker</span>
+      <span class="tech-chip"><span class="dot"></span>Kubernetes</span>
+    </div>
+  </div>
+  <div class="tech-marquee-wrap">
+    <div class="tech-marquee rev">
+      <span class="tech-chip"><span class="dot"></span>Java</span>
+      <span class="tech-chip"><span class="dot"></span>Python</span>
+      <span class="tech-chip"><span class="dot"></span>Angular</span>
+      <span class="tech-chip"><span class="dot"></span>Vue</span>
+      <span class="tech-chip"><span class="dot"></span>Flutter</span>
+      <span class="tech-chip"><span class="dot"></span>SQL Server</span>
+      <span class="tech-chip"><span class="dot"></span>MySQL</span>
+      <span class="tech-chip"><span class="dot"></span>MongoDB</span>
+      <span class="tech-chip"><span class="dot"></span>PostgreSQL</span>
+      <span class="tech-chip"><span class="dot"></span>Java</span>
+      <span class="tech-chip"><span class="dot"></span>Python</span>
+      <span class="tech-chip"><span class="dot"></span>Angular</span>
+      <span class="tech-chip"><span class="dot"></span>Vue</span>
+      <span class="tech-chip"><span class="dot"></span>Flutter</span>
+      <span class="tech-chip"><span class="dot"></span>SQL Server</span>
+      <span class="tech-chip"><span class="dot"></span>MySQL</span>
+      <span class="tech-chip"><span class="dot"></span>MongoDB</span>
+      <span class="tech-chip"><span class="dot"></span>PostgreSQL</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Our Process</div>
+      <h2>A disciplined path from idea to production</h2>
+    </div>
+    <div class="process-track">
+      <div class="process-step"><div class="circle">01</div><h4>Discovery</h4><p>Requirement gathering</p></div>
+      <div class="process-step"><div class="circle">02</div><h4>Planning</h4><p>Roadmap &amp; architecture</p></div>
+      <div class="process-step"><div class="circle">03</div><h4>UI Design</h4><p>Prototyping &amp; UX</p></div>
+      <div class="process-step"><div class="circle">04</div><h4>Development</h4><p>Agile sprints</p></div>
+      <div class="process-step"><div class="circle">05</div><h4>Testing</h4><p>QA &amp; security review</p></div>
+      <div class="process-step"><div class="circle">06</div><h4>Deployment</h4><p>Zero-downtime release</p></div>
+      <div class="process-step"><div class="circle">07</div><h4>Support</h4><p>24/7 monitoring</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO PREVIEW ============ -->
+<section class="section-pad bg-surface">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Portfolio</div>
+      <h2>Work that moved the needle</h2>
+    </div>
+    <div class="portfolio-grid">
+      <div class="p-item wide" data-cat="Healthcare" data-title="MediCore Hospital Network" data-desc="Unified patient records platform across 40 facilities, cutting admin time by 38%.">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop" alt="MediCore hospital dashboard project" loading="lazy">
+        <div class="overlay"><span class="cat">Healthcare</span><h4>MediCore Hospital Network</h4></div>
+      </div>
+      <div class="p-item" data-cat="Banking" data-title="NorthBank Core Modernization" data-desc="Legacy core banking migration to a resilient cloud-native platform.">
+        <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?q=80&w=800&auto=format&fit=crop" alt="Banking dashboard project" loading="lazy">
+        <div class="overlay"><span class="cat">Banking</span><h4>NorthBank Modernization</h4></div>
+      </div>
+      <div class="p-item" data-cat="Retail" data-title="UrbanCart Omnichannel Platform" data-desc="Unified commerce engine across web, app and 300 retail stores.">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop" alt="Retail commerce project" loading="lazy">
+        <div class="overlay"><span class="cat">Retail</span><h4>UrbanCart Platform</h4></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;"><a href="portfolio.html" class="btn btn-outline">View Full Portfolio</a></div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDIES ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Case Studies</div>
+      <h2>Three transformations, three industries</h2>
+    </div>
+
+    <div class="case-study reveal">
+      <div class="img"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=900&auto=format&fit=crop" alt="Hospital network case study" loading="lazy"></div>
+      <div class="content">
+        <div class="full"><div class="client">Healthcare · MediCore Network</div><h3>Connecting 40 hospitals on one patient record</h3></div>
+        <div class="block"><h5>Challenge</h5><p>Fragmented patient data across 40 facilities caused delays and duplicated tests.</p></div>
+        <div class="block"><h5>Solution</h5><p>A unified EHR platform on Azure with real-time sync and role-based access.</p></div>
+        <div class="block full tech-tags"><span>.NET</span><span>Azure</span><span>Power BI</span><span>HL7 FHIR</span></div>
+        <div class="block full result"><strong>38% reduction</strong>in administrative processing time within 6 months.</div>
+      </div>
+    </div>
+
+    <div class="case-study reveal">
+      <div class="img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=900&auto=format&fit=crop" alt="Banking platform case study" loading="lazy"></div>
+      <div class="content">
+        <div class="full"><div class="client">Banking · NorthBank</div><h3>Modernizing a 25-year-old core banking system</h3></div>
+        <div class="block"><h5>Challenge</h5><p>Legacy mainframe architecture limited product launch speed and mobile experience.</p></div>
+        <div class="block"><h5>Solution</h5><p>Phased migration to a microservices core with zero customer downtime.</p></div>
+        <div class="block full tech-tags"><span>Java</span><span>Kubernetes</span><span>PostgreSQL</span><span>AWS</span></div>
+        <div class="block full result"><strong>4.2x faster</strong>time-to-market for new financial products.</div>
+      </div>
+    </div>
+
+    <div class="case-study reveal">
+      <div class="img"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=900&auto=format&fit=crop" alt="Retail omnichannel case study" loading="lazy"></div>
+      <div class="content">
+        <div class="full"><div class="client">Retail · UrbanCart</div><h3>One inventory engine for 300 stores and online</h3></div>
+        <div class="block"><h5>Challenge</h5><p>Disconnected inventory systems caused stockouts and inconsistent pricing.</p></div>
+        <div class="block"><h5>Solution</h5><p>A real-time omnichannel commerce platform with predictive restocking.</p></div>
+        <div class="block full tech-tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Azure</span></div>
+        <div class="block full result"><strong>21% revenue lift</strong>in the first full quarter post-launch.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section-pad bg-dark">
+  <div class="container">
+    <div class="section-head center"><div class="eyebrow">Testimonials</div><h2>What our clients say</h2></div>
+    <div class="testi-slider">
+      <div class="testi-slide active">
+        <div class="testi-stars">★★★★★</div>
+        <p>"TechNova didn't just deliver code — they rebuilt how our operations team thinks about data. The Power BI rollout paid for itself in a quarter."</p>
+        <div class="testi-profile">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" alt="Client portrait" loading="lazy">
+          <div><strong>Ananya Rao</strong><span>COO, NorthBank Financial</span></div>
+        </div>
+      </div>
+      <div class="testi-slide">
+        <div class="testi-stars">★★★★★</div>
+        <p>"The migration was flawless — zero downtime across 40 hospital sites. Their engineers understood healthcare compliance better than our own vendors."</p>
+        <div class="testi-profile">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop" alt="Client portrait" loading="lazy">
+          <div><strong>Dr. Michael Chen</strong><span>CIO, MediCore Health Network</span></div>
+        </div>
+      </div>
+      <div class="testi-slide">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Revenue grew 21% the quarter after launch. TechNova's team felt like an extension of ours, not an outsourced vendor."</p>
+        <div class="testi-profile">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" alt="Client portrait" loading="lazy">
+          <div><strong>Priya Menon</strong><span>VP Digital, UrbanCart Retail</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-dots"></div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="section-head center"><div class="eyebrow">Leadership</div><h2>The people behind the platform</h2></div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=500&auto=format&fit=crop" alt="Rajesh Verma, CEO" loading="lazy"><a href="#" class="li" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg></a></div>
+        <h4>Rajesh Verma</h4><span>Chief Executive Officer</span>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=500&auto=format&fit=crop" alt="Sarah Williams, CTO" loading="lazy"><a href="#" class="li" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg></a></div>
+        <h4>Sarah Williams</h4><span>Chief Technology Officer</span>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=500&auto=format&fit=crop" alt="Neha Kulkarni, VP Delivery" loading="lazy"><a href="#" class="li" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg></a></div>
+        <h4>Neha Kulkarni</h4><span>VP, Project Delivery</span>
+      </div>
+      <div class="team-card">
+        <div class="team-photo"><img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?q=80&w=500&auto=format&fit=crop" alt="David Okafor, Head of Design" loading="lazy"><a href="#" class="li" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg></a></div>
+        <h4>David Okafor</h4><span>Head of Product Design</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:44px;"><a href="about.html#team" class="btn btn-outline">Meet the Full Team</a></div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section class="section-pad bg-surface">
+  <div class="container">
+    <div class="section-head center"><div class="eyebrow">Insights</div><h2>Latest from the TechNova blog</h2></div>
+    <div class="blog-grid">
+      <a class="blog-card" href="blog.html#ai-adoption">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=700&auto=format&fit=crop" alt="AI adoption article" loading="lazy"></div>
+        <div class="body"><div class="meta"><span class="cat">AI &amp; Automation</span><span>Jun 18, 2026</span></div><h3>The Future of Enterprise AI Adoption</h3><p>How mid-market firms are operationalising AI without a six-figure pilot.</p><span class="read">Read More →</span></div>
+      </a>
+      <a class="blog-card" href="blog.html#zero-trust">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=700&auto=format&fit=crop" alt="Zero trust security article" loading="lazy"></div>
+        <div class="body"><div class="meta"><span class="cat">Cyber Security</span><span>Jun 04, 2026</span></div><h3>Zero Trust: Beyond the Buzzword</h3><p>A practical, phased roadmap for enterprises adopting zero trust.</p><span class="read">Read More →</span></div>
+      </a>
+      <a class="blog-card" href="blog.html#power-bi-guide">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=700&auto=format&fit=crop" alt="Power BI analytics article" loading="lazy"></div>
+        <div class="body"><div class="meta"><span class="cat">Data Analytics</span><span>May 22, 2026</span></div><h3>Power BI vs Traditional BI Tools</h3><p>Choosing the right analytics stack for a fast-moving enterprise.</p><span class="read">Read More →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="section-pad bg-dark" style="text-align:center;">
+  <div class="container" style="max-width:760px;">
+    <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:20px;">Ready to build what's next<span class="typing" data-words='["for your enterprise?","for your customers?","for your team?"]'></span></h2>
+    <p style="color:#B7BBC3;margin-bottom:36px;">Tell us about your project and a senior solutions architect will respond within one business day.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+      <a href="portfolio.html" class="btn btn-ghost-light">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><polygon points="24,2 44,13 44,35 24,46 4,35 4,13" fill="url(#g2)"/><path d="M16 32V16l16 16V16" stroke="#14161A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="g2" x1="4" y1="2" x2="44" y2="46"><stop stop-color="#FFD65C"/><stop offset="1" stop-color="#F2B705"/></linearGradient></defs></svg>
+          <span>TechNova</span>
+        </a>
+        <p>Enterprise software, cloud and AI engineering for organizations that can't afford to stand still.</p>
+        <div class="social-row">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 4.5c-.8.35-1.7.6-2.6.7a4.6 4.6 0 002-2.5c-.9.5-1.9.9-2.9 1.1a4.5 4.5 0 00-7.7 4.1A12.8 12.8 0 011.6 3.2a4.5 4.5 0 001.4 6 4.5 4.5 0 01-2-.6v.1a4.5 4.5 0 003.6 4.4 4.6 4.6 0 01-2 .1 4.5 4.5 0 004.2 3.1A9 9 0 012 18.6 12.7 12.7 0 008.9 20.6c8.3 0 12.9-6.9 12.9-12.9v-.6c.9-.6 1.6-1.4 2.2-2.3z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.4.5.6.2 1 .5 1.5 1 .4.4.7.9 1 1.5.2.5.4 1.2.5 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.4-.2.6-.5 1-1 1.5-.4.4-.9.7-1.5 1-.5.2-1.2.4-2.4.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.4-.5-.6-.2-1-.5-1.5-1-.4-.4-.7-.9-1-1.5-.2-.5-.4-1.2-.5-2.4C2 15.6 2 15.2 2 12s0-3.6.1-4.9c.1-1.2.3-2 .5-2.4.2-.6.5-1 1-1.5.4-.4.9-.7 1.5-1 .5-.2 1.2-.4 2.4-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1 0-1.6.2-1.9.4-.5.2-.8.4-1.2.7-.3.4-.5.7-.7 1.2-.1.3-.3.9-.4 1.9C3 9.5 3 9.9 3 13c0 3.1 0 3.5.1 4.7 0 1 .2 1.6.4 1.9.2.5.4.8.7 1.2.4.3.7.5 1.2.7.3.1.9.3 1.9.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1 0 1.6-.2 1.9-.4.5-.2.8-.4 1.2-.7.3-.4.5-.7.7-1.2.1-.3.3-.9.4-1.9.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-1-.2-1.6-.4-1.9a3.3 3.3 0 00-.7-1.2 3.3 3.3 0 00-1.2-.7c-.3-.1-.9-.3-1.9-.4-1.2-.1-1.6-.1-4.7-.1zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.8a3.2 3.2 0 100 6.4 3.2 3.2 0 000-6.4zm5.2-2a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Services</h5>
+        <a href="services.html#custom-software">Custom Software</a>
+        <a href="services.html#cloud">Cloud Solutions</a>
+        <a href="services.html#ai-automation">AI &amp; Automation</a>
+        <a href="services.html#cyber-security">Cyber Security</a>
+      </div>
+      <div class="footer-col"><h5>Industries</h5>
+        <a href="industries.html#healthcare">Healthcare</a>
+        <a href="industries.html#banking">Banking</a>
+        <a href="industries.html#retail">Retail</a>
+        <a href="industries.html#government">Government</a>
+      </div>
+      <div class="footer-col"><h5>Support</h5>
+        <a href="contact.html">Contact Us</a>
+        <a href="careers.html">Careers</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="cookies.html">Cookie Policy</a>
+      </div>
+      <div class="footer-col"><h5>Newsletter</h5>
+        <p style="font-size:.88rem;color:#9BA0AA;">Enterprise insights, once a month. No spam.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault();this.querySelector('input').value='Subscribed ✓';">
+          <input type="email" placeholder="Work email" required aria-label="Email for newsletter">
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TechNova Solutions. All rights reserved.</span>
+      <div>
+        <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="chat-widget">
+  <div class="chat-panel">
+    <div class="chat-head"><strong>TechNova Support</strong><span>Typically replies in a few minutes</span></div>
+    <div class="chat-body">
+      <div class="chat-bubble">👋 Hi! Have a project in mind? Tell us a bit about it and our team will follow up.</div>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" placeholder="Type a message…" aria-label="Chat message">
+      <button aria-label="Send message"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+    </div>
+  </div>
+  <button class="chat-toggle" aria-label="Open live chat">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+  </button>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  // Inject service preview cards (kept in one place for consistency with services.html)
+  const previewServices = [
+    ['Custom Software Development','Bespoke platforms engineered around your exact workflows.','custom-software','https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop'],
+    ['Cloud Solutions','Migration, architecture and managed operations across Azure &amp; AWS.','cloud','https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=500&auto=format&fit=crop'],
+    ['AI &amp; Automation','Intelligent automation embedded directly into daily operations.','ai-automation','https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=500&auto=format&fit=crop'],
+    ['Cyber Security','Zero-trust architecture and continuous threat monitoring.','cyber-security','https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=500&auto=format&fit=crop'],
+    ['Power BI &amp; Analytics','Enterprise dashboards that turn raw data into decisions.','power-bi','https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=500&auto=format&fit=crop'],
+    ['Mobile App Development','Native and cross-platform apps built for scale.','mobile-apps','https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=500&auto=format&fit=crop'],
+  ];
+  document.getElementById('services-preview').innerHTML = previewServices.map(([title,desc,id,img])=>`
+    <div class="service-card reveal">
+      <div class="thumb"><img src="${img}" alt="${title.replace(/&amp;/g,'&')}" loading="lazy">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg></div>
+      </div>
+      <div class="body"><h3>${title}</h3><p>${desc}</p><a class="learn" href="services.html#${id}">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a></div>
+    </div>`).join('');
+  document.querySelectorAll('#services-preview .reveal').forEach(el=>{
+    const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.15});
+    io.observe(el);
+  });
+</script>
+</body>
+</html>
