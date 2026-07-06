@@ -168,6 +168,31 @@ body:not(.is-home) .brand .word{ max-width:0; opacity:0; margin-left:-4px; }
   position:relative; transition:color .25s, background .25s;
 }
 .nav-main a:hover, .nav-main a.active{ background:var(--gray-100); color:var(--gold-700); }
+
+/* ===================================newly added for header ===========================*/
+
+/* Keep header text readable while it's transparent over the dark hero image */
+.site-header:not(.scrolled) .brand .word {
+  color: #fff;
+}
+
+.site-header:not(.scrolled) .nav-main a {
+  color: #fff;
+}
+
+.site-header:not(.scrolled) .nav-main a:hover {
+  background: rgba(255, 255, 255, .16);
+  color: #fff;
+}
+
+.site-header:not(.scrolled) .nav-main a.active {
+  background: var(--gray-100);
+  color: var(--gold-700);
+}
+
+/* -------------------------------------------------------------------- */
+
+
 [data-theme="dark"] .nav-main a:hover, [data-theme="dark"] .nav-main a.active{ background:var(--gray-800); color:var(--gold-300); }
 
 .header-actions{ display:flex; align-items:center; gap:10px; }
